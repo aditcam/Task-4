@@ -19,7 +19,7 @@ public class Main2Activity extends AppCompatActivity {
         int age_1=intent.getIntExtra("e_age",-1);
         String name=intent.getStringExtra("e_name");
         textView_name.setText("The user's name is "+name+"");
-        textView_age.setText(Integer.toString(age_1));
+        textView_age.setText("The users age is "+Integer.toString(age_1));
 
     }
 }

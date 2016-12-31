@@ -18,13 +18,14 @@ public class MainActivity extends AppCompatActivity {
         button =(Button)findViewById(R.id.b1);
         et1=(EditText)findViewById(R.id.et1);
         et2=(EditText)findViewById(R.id.et2);
-        final String str =et1.getText().toString();
-        final int age=Integer.parseInt(et2.getText().toString());
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(getApplicationContext(),Main2Activity.class);
-               intent.putExtra("e_name",str);
+                final String str =et1.getText().toString();
+                final int age=Integer.parseInt(et2.getText().toString());
+                intent.putExtra("e_name",str);
                 intent.putExtra("e_age",age);
                 startActivity(intent);
 
